@@ -37,4 +37,47 @@ Para configurar o projeto localmente, siga os passos abaixo:
 1. Clone o repositório:
 
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/FHenriqueZiimer/ebanx-assignment.git
+
+2. Navegue para o diretório do projeto:
+
+   ```bash
+   cd ebanx-assignment
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+
+4. Compile o código TypeScript:
+
+   ```bash
+   npm run build
+
+   
+5. Inicie o servidor:
+
+   ```bash
+   npm start
+
+O servidor estará rodando em http://localhost:3000.
+
+## Instalação
+
+Para executar os testes, use o seguinte comando:
+
+   ```bash
+   npm test
+  ```
+
+Endpoints da API
+* POST /reset: Reseta todas as contas.
+
+* GET /balance: Retorna o saldo da conta especificada.
+Exemplo: GET /balance?account_id=100. Retorna 200 OK com o saldo ou 404 Not Found se a conta não existir.
+
+* POST /event: Cria um evento de depósito, retirada ou transferência.
+Exemplo: POST /event com corpo JSON { "type": "deposit", "destination": "100", "amount": 10 }. Retorna 201 Created com os detalhes da conta ou 404 Not Found
+
+
+
