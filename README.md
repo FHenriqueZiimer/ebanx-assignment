@@ -25,7 +25,7 @@ Este é um projeto de gerenciamento de contas bancárias criado como uma tarefa 
   - **`models/`**: Definições de tipos e interfaces.
   - **`tests/`**: Testes unitários e de integração.
   - **`index.ts`**: Configuração e inicialização do servidor Express.
-- **`tests/`**: Testes para validar o comportamento da aplicação.
+  - **`tests/`**: Testes para validar o comportamento da aplicação.
 - **`package.json`**: Gerenciador de pacotes e scripts do projeto.
 - **`tsconfig.json`**: Configuração do TypeScript.
 - **`.gitignore`**: Arquivo para ignorar arquivos e pastas não rastreados pelo Git.
