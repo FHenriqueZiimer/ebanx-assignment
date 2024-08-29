@@ -62,7 +62,43 @@ Para configurar o projeto localmente, siga os passos abaixo:
 
 O servidor estará rodando em http://localhost:3000.
 
-## Instalação
+## Iniciando com Docker
+
+Se preferir rodar o projeto usando Docker, siga os passos abaixo:
+
+1. Certifique-se de ter o Docker instalado em sua máquina. Você pode baixar o Docker [aqui](https://www.docker.com/get-started).
+
+2. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/FHenriqueZiimer/ebanx-assignment.git
+
+3. Navegue para o diretório do projeto:
+
+   ```bash
+   cd ebanx-assignment
+
+
+4.Construa a imagem Docker:
+  
+   ```bash
+   docker build -t ebanx-assignment
+   ```
+
+O servidor estará rodando em http://localhost:3000.
+
+
+
+5. Inicie um container a partir da imagem:
+
+  ```bash
+  docker run -d -p 3000:3000 ebanx-assignment
+  ```
+
+
+
+
+## Testes
 
 Para executar os testes, use o seguinte comando:
 
